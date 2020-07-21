@@ -14,6 +14,7 @@ namespace Online_Copper_Tools_Project.Models
         public string customerEmail { get; set; }
         public string customerPassword { get; set; }
         public string customerPhoneNumber { get; set; }
-        public string customerLocation { get; set; }
+
+        public virtual Customer_Address customerAddress { get; set; }
     }
 }

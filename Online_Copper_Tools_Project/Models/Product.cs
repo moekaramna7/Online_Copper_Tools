@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using static Online_Copper_Tools_Project.Tools.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Online_Copper_Tools_Project.Models
 {
@@ -12,8 +13,10 @@ namespace Online_Copper_Tools_Project.Models
         [Key]
         public int productId { get; set; }
         public string productName { get; set; }
-        public string productCategory { get; set; }
-        public virtual productSize? productSize { get; set; }
+        [ForeignKey("Product_Category")]
+        public int categoryId { get; set; }
+        public virtual Product_Category productCategory { get; set; }
+        public productSize? productSize { get; set; }
         public decimal productPrice { get; set; }
         public int productDiscount { get; set; }
     }

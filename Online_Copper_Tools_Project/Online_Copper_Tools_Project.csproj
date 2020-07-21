@@ -141,6 +141,7 @@
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Cart_Detail.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Customer_Address.cs" />
     <Compile Include="Models\Customer_Complaint.cs" />
     <Compile Include="Models\OCT_Model.cs" />
     <Compile Include="Models\Product.cs" />

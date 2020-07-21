@@ -11,5 +11,6 @@ namespace Online_Copper_Tools_Project.Models
         [Key]
         public int categoryId { get; set; }
         public string categoryName { get; set; }
+        public virtual ICollection<Product> product { get; set; }
     }
 }
