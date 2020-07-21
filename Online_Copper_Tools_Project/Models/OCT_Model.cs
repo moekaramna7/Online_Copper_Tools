@@ -20,5 +20,6 @@ namespace Online_Copper_Tools_Project.Models
         public DbSet<Cart> carts { get; set; }
         public DbSet<Cart_Detail> cartDetails { get; set; }
         public DbSet<Customer_Address> customersAddress { get; set; }
+        public DbSet<Admin> admins { get; set; }
     }
 }

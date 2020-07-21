@@ -10,7 +10,7 @@ namespace Online_Copper_Tools_Project.Models
     {
         [Key]
         public int customerId { get; set; }
-        public string customerName { get; set; }
+        public string customerFullName { get; set; }
         public string customerEmail { get; set; }
         public string customerPassword { get; set; }
         public string customerPhoneNumber { get; set; }

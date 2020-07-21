@@ -19,6 +19,7 @@ namespace Online_Copper_Tools_Project.Models
         public int cartId { get; set; }
 
         public string complaintMessage { get; set; }
+        public bool isReplied { get; set; }
 
         public virtual Customer customer { get; set; }
     }

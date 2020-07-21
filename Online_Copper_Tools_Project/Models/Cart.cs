@@ -15,5 +15,6 @@ namespace Online_Copper_Tools_Project.Models
         public int customerId { get; set; }
         public virtual Cart_Detail cartDetail { get; set; }
         public DateTime datePlaced { get; set; }
+        public bool isPurchased { get; set; }
     }
 }

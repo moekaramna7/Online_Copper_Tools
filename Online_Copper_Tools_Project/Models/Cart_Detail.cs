@@ -13,9 +13,10 @@ namespace Online_Copper_Tools_Project.Models
         public int cartDetailId { get; set; }
         [ForeignKey("Cart")]
         public int cartId { get; set; }
-        public virtual Cart cart { get; set; }
         public int productId { get; set; }
         public int productQuantity { get; set; }
         public DateTime dateAdded { get; set; }
+
+        public virtual Cart cart { get; set; }
     }
 }
